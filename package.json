@@ -1,0 +1,35 @@
+{
+  "name": "youtube-whisper-transcriber",
+  "version": "1.0.0",
+  "description": "A tool to transcribe YouTube videos using OpenAI's Whisper API",
+  "main": "index.js",
+  "bin": {
+    "youtube-whisper-transcriber": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "audio": "node audioIndex.js",
+    "transcribe": "node audioIndex.js"
+  },
+  "keywords": [
+    "youtube",
+    "transcription",
+    "whisper",
+    "openai",
+    "audio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^11.1.1",
+    "m3u8stream": "^0.8.6",
+    "miniget": "^4.2.3",
+    "openai": "^4.86.1",
+    "sax": "^1.4.1",
+    "ytdl-core": "npm:@distube/ytdl-core@^4.16.4"
+  }
+}
