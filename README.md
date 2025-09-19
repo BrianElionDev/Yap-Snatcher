@@ -63,23 +63,23 @@ npm start -- -u "https://www.youtube.com/watch?v=VIDEO_ID" -l fr -t 0.5 --format
 
 #### Single File Transcription
 ```bash
-npm run audio -- -i /path/to/audio.mp3
+node audioIndex.js -i DomainSherpa.mp3 -l en --format txt
 ```
 
 With custom options:
 ```bash
-npm run audio -- -i /path/to/audio.mp3 -o /path/to/output.txt -l es -t 0.3 --format json
+node audioIndex.js  -- -i /path/to/audio.mp3 -o /path/to/output.txt -l es -t 0.3 --format json
 ```
 
 #### Batch Processing
 Process all audio files in a directory:
 ```bash
-npm run audio -- -i /path/to/audio/directory --batch
+node audioIndex.js  -- -i /path/to/audio/directory --batch
 ```
 
 With custom output directory:
 ```bash
-npm run audio -- -i /path/to/audio/directory --batch -d /path/to/output/directory
+node audioIndex.js  -- -i /path/to/audio/directory --batch -d /path/to/output/directory
 ```
 
 **Options:**
